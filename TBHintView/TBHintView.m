@@ -38,6 +38,7 @@
 @synthesize presentationAnimation;
 @synthesize orientation;
 @synthesize dismissTimer;
+@synthesize maximumHeight;
 
 
 - (id)initWithFrame:(CGRect)frame
@@ -48,6 +49,7 @@
         self.clipsToBounds = YES;
         self.spanWidthWeight = 1.0f;
         self.layer.cornerRadius = 12.0;
+        self.maximumHeight = 160.0f;
         self.userInteractionEnabled = YES;
         self.presentationAnimation = kHintViewPresentationSlide;
         self.orientation = kHintViewOrientationBottom;
@@ -265,13 +267,8 @@
 
     CGRect parentFrame = self.superview.bounds;
     
-    CGFloat height = 200.0f;
-    
-    if( self.dataSource && [self.dataSource respondsToSelector:@selector(heightForHintView:)] )
-    {
-        height = [self.delegate heightForHintView:self];
-    }
-    
+    CGFloat height = self.maximumHeight;
+ 
     self.labelTitle.textColor = self.textColor;
 
     
@@ -352,6 +349,11 @@
 
 -(void) dismiss
 {    
+    if( self.dismissTimer )
+    {
+        [self.dismissTimer invalidate];
+    }
+        
     if( self.orientation == kHintViewOrientationBottom )
     {
         if( self.presentationAnimation == kHintViewPresentationSlide )

@@ -40,6 +40,7 @@ typedef enum
 @property (nonatomic,assign) CGFloat spanWidthWeight; // Width weight between 0.01f and 1.0f
 @property (nonatomic,assign) TBHintViewPresentationAnimation presentationAnimation;
 @property (nonatomic,assign) TBHintViewOrientation orientation;
+@property (nonatomic,assign) CGFloat maximumHeight;
 
 -(void) show;
 -(void) show:(NSTimeInterval)duration;

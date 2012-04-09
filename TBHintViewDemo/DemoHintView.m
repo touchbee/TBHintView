@@ -398,12 +398,6 @@
 }
 
 
--(CGFloat) heightForHintView:(TBHintView*)hintView
-{
-    return self.maxHeight > 0.0f ? self.maxHeight : 180;
-}
-
-
 -(void)dismissedHintView:(TBHintView *)hintView
 {    
     if( self.customDismissedBlock )
@@ -463,6 +457,20 @@
 +(BOOL) hintsEnabled
 {
     return [[NSUserDefaults standardUserDefaults] integerForKey:@"HintsEnabled"];
+}
+
+
++(BOOL) isHintVisibleInView:(UIView*)view
+{
+    for (UIView* subview in view.subviews ) 
+    {
+        if( [subview isKindOfClass:[TBHintView class]] )
+        {
+            return YES;
+        }
+    }
+    
+    return NO;
 }
 
 @end

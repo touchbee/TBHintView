@@ -40,6 +40,8 @@ typedef void (^DemoHintViewBlock)();
 +(void) enableHints:(BOOL)enable;
 +(BOOL) hintsEnabled;
 
++(BOOL) isHintVisibleInView:(UIView*)view;
+
 -(void) addPageWithTitle:(NSString*)title text:(NSString*)text;
 -(void) addPageWithTitle:(NSString*)title image:(UIImage*)image;
 -(void) addPageWithtitle:(NSString*)title text:(NSString*)text buttonText:(NSString*)buttonText buttonAction:(DemoHintViewBlock)buttonAction;

@@ -21,7 +21,6 @@
 		F852831A1533604500F441FE /* 90-lifebuoy.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283111533604500F441FE /* 90-lifebuoy.png */; };
 		F852831D1533604500F441FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F85283141533604500F441FE /* main.m */; };
 		F852831E1533604500F441FE /* pattern2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F85283151533604500F441FE /* pattern2.jpg */; };
-		F852831F1533604500F441FE /* TBHintViewDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F85283161533604500F441FE /* TBHintViewDemo-Info.plist */; };
 		F85283281533648100F441FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F85283241533648100F441FE /* InfoPlist.strings */; };
 		F85283291533648100F441FE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85283261533648100F441FE /* ViewController.xib */; };
 		F85283311533675A00F441FE /* touchbee_small.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283301533675A00F441FE /* touchbee_small.png */; };
@@ -197,7 +196,6 @@
 				F85283181533604500F441FE /* 60-x.png in Resources */,
 				F852831A1533604500F441FE /* 90-lifebuoy.png in Resources */,
 				F852831E1533604500F441FE /* pattern2.jpg in Resources */,
-				F852831F1533604500F441FE /* TBHintViewDemo-Info.plist in Resources */,
 				F85283281533648100F441FE /* InfoPlist.strings in Resources */,
 				F85283291533648100F441FE /* ViewController.xib in Resources */,
 				F85283311533675A00F441FE /* touchbee_small.png in Resources */,
