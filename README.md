@@ -9,7 +9,7 @@ TBHintView is a simple, highly customizable hint library for iOS. It enables you
 
 #Customize Hints
 
-The demo includes TBHintViewDemo/DemoHintView, which acts as a wrapper for the TBHintView class. You can customize this class or create a class based on the pattern used in its implementation to simply integration. 
+The demo includes TBHintViewDemo/DemoHintView, which acts as a wrapper for the TBHintView class. You can customize this class or create a class based on the pattern used in its implementation to simplify integration. 
 
 #Credits
 
