@@ -1,6 +1,6 @@
 //
 //  HintView.h
-//  MusicR
+//  TBHintView
 //
 //  Created by Stefan Immich on 4/5/12.
 //  Copyright (c) 2012 touchbee Solutions. All rights reserved.

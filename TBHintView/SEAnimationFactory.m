@@ -1,6 +1,6 @@
 //
 //  SEAnimationManager.m
-//  SISTER - Scriptable Immersive Storytelling Engine
+//  TBHintView
 //
 //  Created by Stefan Immich on 9/7/11.
 //  Copyright 2011 touchbee Solutions. All rights reserved.
