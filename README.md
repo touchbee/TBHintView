@@ -1,10 +1,10 @@
 #TBHintView
 
-TBHintView is a simple, highly customizable hint library for iOS. It enables you to add simple hints to any UIView. It features multiple page support and various show and hide animation types. The dismiss and title icon are for demo purposes only and are available from [Glyphish](http://glyphish.com/ "Glyphish")
+TBHintView is a simple, highly customizable hint library for iOS. It enables you to add simple hints to any UIView. It features multiple page support and various show and hide animation types. The dismiss and title icon are for demo purposes only and are available from [Glyphish](http://glyphish.com/ "Glyphish").
 
 #Installation
 
-1. Drag the TBHintViewDemo/TBHintView folder into your project.
+1. Drag the TBHintView/TBHintView folder into your project.
 2. Add the QuartzCore framework to your project.
 
 #Credits
