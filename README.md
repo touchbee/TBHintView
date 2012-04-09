@@ -7,6 +7,10 @@ TBHintView is a simple, highly customizable hint library for iOS. It enables you
 1. Drag the TBHintView/TBHintView folder into your project.
 2. Add the QuartzCore framework to your project.
 
+#Customize Hints
+
+The demo includes TBHintViewDemo/DemoHintView, which acts as a wrapper for the TBHintView class. You can customize this class or create a class based on the pattern used in its implementation to simply integration. 
+
 #Credits
 
 TBHintView is brought to you by touchbee Solutions. If you have feature suggestions or bug reports, feel free to help out by sending pull requests or by creating new issues. If you’re using TBHintView in your project, attribution would be appreciated.

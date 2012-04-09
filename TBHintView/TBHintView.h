@@ -27,13 +27,13 @@ typedef enum
 } HintViewPresentationAnimation;
 
 
-@protocol HintViewDataSource;
-@protocol HintViewDelegate;
+@protocol TBHintViewDataSource;
+@protocol TBHintViewDelegate;
 
 @interface TBHintView : UIView<UIScrollViewDelegate>
 
-@property (nonatomic,assign) id<HintViewDataSource> dataSource;
-@property (nonatomic,assign) id<HintViewDelegate> delegate;
+@property (nonatomic,assign) id<TBHintViewDataSource> dataSource;
+@property (nonatomic,assign) id<TBHintViewDelegate> delegate;
 
 @property (nonatomic,copy) UIImage* backgroundImage;
 @property (nonatomic,copy) UIColor* textColor;
@@ -50,7 +50,7 @@ typedef enum
 
 
 
-@protocol HintViewDataSource<NSObject>
+@protocol TBHintViewDataSource<NSObject>
 
 @required
 
@@ -70,7 +70,7 @@ typedef enum
 
 
 
-@protocol HintViewDelegate<NSObject>
+@protocol TBHintViewDelegate<NSObject>
 
 @optional
 

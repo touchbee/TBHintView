@@ -21,7 +21,7 @@ typedef enum
 } HintID;
 
 
-@interface DemoHintView : NSObject<HintViewDataSource, HintViewDelegate>
+@interface DemoHintView : NSObject<TBHintViewDataSource, TBHintViewDelegate>
 
 typedef void (^DemoHintViewBlock)();
 
