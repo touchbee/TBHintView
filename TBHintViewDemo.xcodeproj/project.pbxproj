@@ -18,17 +18,13 @@
 		F852830D1533603400F441FE /* DemoHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85283091533603300F441FE /* DemoHintView.m */; };
 		F852830E1533603400F441FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F852830B1533603300F441FE /* ViewController.m */; };
 		F85283181533604500F441FE /* 60-x.png in Resources */ = {isa = PBXBuildFile; fileRef = F852830F1533604500F441FE /* 60-x.png */; };
-		F85283191533604500F441FE /* 60-x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283101533604500F441FE /* 60-x@2x.png */; };
 		F852831A1533604500F441FE /* 90-lifebuoy.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283111533604500F441FE /* 90-lifebuoy.png */; };
-		F852831B1533604500F441FE /* 90-lifebuoy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283121533604500F441FE /* 90-lifebuoy@2x.png */; };
-		F852831C1533604500F441FE /* checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283131533604500F441FE /* checkbox_checked.png */; };
 		F852831D1533604500F441FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F85283141533604500F441FE /* main.m */; };
 		F852831E1533604500F441FE /* pattern2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F85283151533604500F441FE /* pattern2.jpg */; };
 		F852831F1533604500F441FE /* TBHintViewDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F85283161533604500F441FE /* TBHintViewDemo-Info.plist */; };
 		F85283281533648100F441FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F85283241533648100F441FE /* InfoPlist.strings */; };
 		F85283291533648100F441FE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85283261533648100F441FE /* ViewController.xib */; };
-		F852832C1533653900F441FE /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = F852832A1533653900F441FE /* Cross.png */; };
-		F852832D1533653900F441FE /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = F852832B1533653900F441FE /* Heart.png */; };
+		F85283311533675A00F441FE /* touchbee_small.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283301533675A00F441FE /* touchbee_small.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,18 +46,14 @@
 		F852830A1533603300F441FE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F852830B1533603300F441FE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F852830F1533604500F441FE /* 60-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60-x.png"; sourceTree = "<group>"; };
-		F85283101533604500F441FE /* 60-x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60-x@2x.png"; sourceTree = "<group>"; };
 		F85283111533604500F441FE /* 90-lifebuoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "90-lifebuoy.png"; sourceTree = "<group>"; };
-		F85283121533604500F441FE /* 90-lifebuoy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "90-lifebuoy@2x.png"; sourceTree = "<group>"; };
-		F85283131533604500F441FE /* checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_checked.png; sourceTree = "<group>"; };
 		F85283141533604500F441FE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F85283151533604500F441FE /* pattern2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern2.jpg; sourceTree = "<group>"; };
 		F85283161533604500F441FE /* TBHintViewDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TBHintViewDemo-Info.plist"; sourceTree = "<group>"; };
 		F85283171533604500F441FE /* TBHintViewDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBHintViewDemo-Prefix.pch"; sourceTree = "<group>"; };
 		F85283251533648100F441FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F85283271533648100F441FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		F852832A1533653900F441FE /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
-		F852832B1533653900F441FE /* Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heart.png; sourceTree = "<group>"; };
+		F85283301533675A00F441FE /* touchbee_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touchbee_small.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,13 +119,9 @@
 		F852829A1533531200F441FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F852832A1533653900F441FE /* Cross.png */,
-				F852832B1533653900F441FE /* Heart.png */,
+				F85283301533675A00F441FE /* touchbee_small.png */,
 				F852830F1533604500F441FE /* 60-x.png */,
-				F85283101533604500F441FE /* 60-x@2x.png */,
 				F85283111533604500F441FE /* 90-lifebuoy.png */,
-				F85283121533604500F441FE /* 90-lifebuoy@2x.png */,
-				F85283131533604500F441FE /* checkbox_checked.png */,
 				F85283141533604500F441FE /* main.m */,
 				F85283151533604500F441FE /* pattern2.jpg */,
 				F85283161533604500F441FE /* TBHintViewDemo-Info.plist */,
@@ -207,16 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F85283181533604500F441FE /* 60-x.png in Resources */,
-				F85283191533604500F441FE /* 60-x@2x.png in Resources */,
 				F852831A1533604500F441FE /* 90-lifebuoy.png in Resources */,
-				F852831B1533604500F441FE /* 90-lifebuoy@2x.png in Resources */,
-				F852831C1533604500F441FE /* checkbox_checked.png in Resources */,
 				F852831E1533604500F441FE /* pattern2.jpg in Resources */,
 				F852831F1533604500F441FE /* TBHintViewDemo-Info.plist in Resources */,
 				F85283281533648100F441FE /* InfoPlist.strings in Resources */,
 				F85283291533648100F441FE /* ViewController.xib in Resources */,
-				F852832C1533653900F441FE /* Cross.png in Resources */,
-				F852832D1533653900F441FE /* Heart.png in Resources */,
+				F85283311533675A00F441FE /* touchbee_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

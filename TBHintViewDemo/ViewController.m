@@ -63,7 +63,7 @@
     }];
     
     [hintView addPageWithTitle:@"Page 2" text:@"This is some demo text. Swipe this message to see the next hint!"];
-    [hintView addPageWithTitle:@"Page 3" image:[UIImage imageNamed:@"checkbox_checked.png"]];
+    [hintView addPageWithTitle:@"Page 3" image:[UIImage imageNamed:@"touchbee_small.png"]];
     [hintView addPageWithTitle:@"Page 4" text:@"Text B"];
     [hintView addPageWithTitle:@"Page 5" text:@"Text C"];
     
@@ -88,7 +88,7 @@
     }];
     
     [hintView addPageWithTitle:@"Page 2" text:@"This is some demo text. Swipe this message to see the next hint!"];
-    [hintView addPageWithTitle:@"Page 3" image:[UIImage imageNamed:@"checkbox_checked.png"]];
+    [hintView addPageWithTitle:@"Page 3" image:[UIImage imageNamed:@"touchbee_small.png"]];
     [hintView addPageWithTitle:@"Page 4" text:@"Text B"];
     [hintView addPageWithTitle:@"Page 5" text:@"Text C"];
     
@@ -113,7 +113,7 @@
     }];
     
     [hintView addPageWithTitle:@"Page 2" text:@"This is some demo text. Swipe this message to see the next hint!"];
-    [hintView addPageWithTitle:@"Page 3" image:[UIImage imageNamed:@"checkbox_checked.png"]];
+    [hintView addPageWithTitle:@"Page 3" image:[UIImage imageNamed:@"touchbee_small.png"]];
     [hintView addPageWithTitle:@"Page 4" text:@"Text B"];
     [hintView addPageWithTitle:@"Page 5" text:@"Text C"];
     
@@ -138,7 +138,7 @@
     }];
     
     [hintView addPageWithTitle:@"Page 2" text:@"This is some demo text. Swipe this message to see the next hint!"];
-    [hintView addPageWithTitle:@"Page 3" image:[UIImage imageNamed:@"checkbox_checked.png"]];
+    [hintView addPageWithTitle:@"Page 3" image:[UIImage imageNamed:@"touchbee_small.png"]];
     [hintView addPageWithTitle:@"Page 4" text:@"Text B"];
     [hintView addPageWithTitle:@"Page 5" text:@"Text C"];
     
