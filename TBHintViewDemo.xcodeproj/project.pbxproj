@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F85282941533531200F441FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85282931533531200F441FE /* UIKit.framework */; };
+		F85282961533531200F441FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85282951533531200F441FE /* Foundation.framework */; };
+		F85282981533531200F441FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85282971533531200F441FE /* CoreGraphics.framework */; };
+		F85282CA1533580700F441FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85282C91533580700F441FE /* QuartzCore.framework */; };
+		F85283031533601F00F441FE /* SEAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F85282FE1533601F00F441FE /* SEAnimationFactory.m */; };
+		F85283041533601F00F441FE /* TBHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85283001533601F00F441FE /* TBHintView.m */; };
+		F85283051533601F00F441FE /* UIView+SEAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F85283021533601F00F441FE /* UIView+SEAnimations.m */; };
+		F852830C1533603400F441FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F85283071533603300F441FE /* AppDelegate.m */; };
+		F852830D1533603400F441FE /* DemoHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85283091533603300F441FE /* DemoHintView.m */; };
+		F852830E1533603400F441FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F852830B1533603300F441FE /* ViewController.m */; };
+		F85283181533604500F441FE /* 60-x.png in Resources */ = {isa = PBXBuildFile; fileRef = F852830F1533604500F441FE /* 60-x.png */; };
+		F85283191533604500F441FE /* 60-x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283101533604500F441FE /* 60-x@2x.png */; };
+		F852831A1533604500F441FE /* 90-lifebuoy.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283111533604500F441FE /* 90-lifebuoy.png */; };
+		F852831B1533604500F441FE /* 90-lifebuoy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283121533604500F441FE /* 90-lifebuoy@2x.png */; };
+		F852831C1533604500F441FE /* checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = F85283131533604500F441FE /* checkbox_checked.png */; };
+		F852831D1533604500F441FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F85283141533604500F441FE /* main.m */; };
+		F852831E1533604500F441FE /* pattern2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F85283151533604500F441FE /* pattern2.jpg */; };
+		F852831F1533604500F441FE /* TBHintViewDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F85283161533604500F441FE /* TBHintViewDemo-Info.plist */; };
+		F85283281533648100F441FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F85283241533648100F441FE /* InfoPlist.strings */; };
+		F85283291533648100F441FE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85283261533648100F441FE /* ViewController.xib */; };
+		F852832C1533653900F441FE /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = F852832A1533653900F441FE /* Cross.png */; };
+		F852832D1533653900F441FE /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = F852832B1533653900F441FE /* Heart.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F852828F1533531200F441FE /* TBHintViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBHintViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85282931533531200F441FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F85282951533531200F441FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F85282971533531200F441FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F85282C91533580700F441FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F85282FD1533601F00F441FE /* SEAnimationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAnimationFactory.h; sourceTree = "<group>"; };
+		F85282FE1533601F00F441FE /* SEAnimationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAnimationFactory.m; sourceTree = "<group>"; };
+		F85282FF1533601F00F441FE /* TBHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBHintView.h; sourceTree = "<group>"; };
+		F85283001533601F00F441FE /* TBHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBHintView.m; sourceTree = "<group>"; };
+		F85283011533601F00F441FE /* UIView+SEAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SEAnimations.h"; sourceTree = "<group>"; };
+		F85283021533601F00F441FE /* UIView+SEAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SEAnimations.m"; sourceTree = "<group>"; };
+		F85283061533603300F441FE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F85283071533603300F441FE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F85283081533603300F441FE /* DemoHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHintView.h; sourceTree = "<group>"; };
+		F85283091533603300F441FE /* DemoHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHintView.m; sourceTree = "<group>"; };
+		F852830A1533603300F441FE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F852830B1533603300F441FE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F852830F1533604500F441FE /* 60-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60-x.png"; sourceTree = "<group>"; };
+		F85283101533604500F441FE /* 60-x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60-x@2x.png"; sourceTree = "<group>"; };
+		F85283111533604500F441FE /* 90-lifebuoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "90-lifebuoy.png"; sourceTree = "<group>"; };
+		F85283121533604500F441FE /* 90-lifebuoy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "90-lifebuoy@2x.png"; sourceTree = "<group>"; };
+		F85283131533604500F441FE /* checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_checked.png; sourceTree = "<group>"; };
+		F85283141533604500F441FE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F85283151533604500F441FE /* pattern2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern2.jpg; sourceTree = "<group>"; };
+		F85283161533604500F441FE /* TBHintViewDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TBHintViewDemo-Info.plist"; sourceTree = "<group>"; };
+		F85283171533604500F441FE /* TBHintViewDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBHintViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F85283251533648100F441FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F85283271533648100F441FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F852832A1533653900F441FE /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
+		F852832B1533653900F441FE /* Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heart.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F852828C1533531200F441FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85282CA1533580700F441FE /* QuartzCore.framework in Frameworks */,
+				F85282941533531200F441FE /* UIKit.framework in Frameworks */,
+				F85282961533531200F441FE /* Foundation.framework in Frameworks */,
+				F85282981533531200F441FE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F85282841533531200F441FE = {
+			isa = PBXGroup;
+			children = (
+				F85282B0153353B400F441FE /* TBHintView */,
+				F85282991533531200F441FE /* TBHintViewDemo */,
+				F85282921533531200F441FE /* Frameworks */,
+				F85282901533531200F441FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F85282901533531200F441FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F852828F1533531200F441FE /* TBHintViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F85282921533531200F441FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F85282C91533580700F441FE /* QuartzCore.framework */,
+				F85282931533531200F441FE /* UIKit.framework */,
+				F85282951533531200F441FE /* Foundation.framework */,
+				F85282971533531200F441FE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F85282991533531200F441FE /* TBHintViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F85283241533648100F441FE /* InfoPlist.strings */,
+				F85283261533648100F441FE /* ViewController.xib */,
+				F85283061533603300F441FE /* AppDelegate.h */,
+				F85283071533603300F441FE /* AppDelegate.m */,
+				F85283081533603300F441FE /* DemoHintView.h */,
+				F85283091533603300F441FE /* DemoHintView.m */,
+				F852830A1533603300F441FE /* ViewController.h */,
+				F852830B1533603300F441FE /* ViewController.m */,
+				F852829A1533531200F441FE /* Supporting Files */,
+			);
+			path = TBHintViewDemo;
+			sourceTree = "<group>";
+		};
+		F852829A1533531200F441FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F852832A1533653900F441FE /* Cross.png */,
+				F852832B1533653900F441FE /* Heart.png */,
+				F852830F1533604500F441FE /* 60-x.png */,
+				F85283101533604500F441FE /* 60-x@2x.png */,
+				F85283111533604500F441FE /* 90-lifebuoy.png */,
+				F85283121533604500F441FE /* 90-lifebuoy@2x.png */,
+				F85283131533604500F441FE /* checkbox_checked.png */,
+				F85283141533604500F441FE /* main.m */,
+				F85283151533604500F441FE /* pattern2.jpg */,
+				F85283161533604500F441FE /* TBHintViewDemo-Info.plist */,
+				F85283171533604500F441FE /* TBHintViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F85282B0153353B400F441FE /* TBHintView */ = {
+			isa = PBXGroup;
+			children = (
+				F85282FD1533601F00F441FE /* SEAnimationFactory.h */,
+				F85282FE1533601F00F441FE /* SEAnimationFactory.m */,
+				F85282FF1533601F00F441FE /* TBHintView.h */,
+				F85283001533601F00F441FE /* TBHintView.m */,
+				F85283011533601F00F441FE /* UIView+SEAnimations.h */,
+				F85283021533601F00F441FE /* UIView+SEAnimations.m */,
+			);
+			path = TBHintView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F852828E1533531200F441FE /* TBHintViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85282AD1533531200F441FE /* Build configuration list for PBXNativeTarget "TBHintViewDemo" */;
+			buildPhases = (
+				F852828B1533531200F441FE /* Sources */,
+				F852828C1533531200F441FE /* Frameworks */,
+				F852828D1533531200F441FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBHintViewDemo;
+			productName = TBHintViewDemo;
+			productReference = F852828F1533531200F441FE /* TBHintViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F85282861533531200F441FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "touchbee Solutions";
+			};
+			buildConfigurationList = F85282891533531200F441FE /* Build configuration list for PBXProject "TBHintViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F85282841533531200F441FE;
+			productRefGroup = F85282901533531200F441FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F852828E1533531200F441FE /* TBHintViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F852828D1533531200F441FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85283181533604500F441FE /* 60-x.png in Resources */,
+				F85283191533604500F441FE /* 60-x@2x.png in Resources */,
+				F852831A1533604500F441FE /* 90-lifebuoy.png in Resources */,
+				F852831B1533604500F441FE /* 90-lifebuoy@2x.png in Resources */,
+				F852831C1533604500F441FE /* checkbox_checked.png in Resources */,
+				F852831E1533604500F441FE /* pattern2.jpg in Resources */,
+				F852831F1533604500F441FE /* TBHintViewDemo-Info.plist in Resources */,
+				F85283281533648100F441FE /* InfoPlist.strings in Resources */,
+				F85283291533648100F441FE /* ViewController.xib in Resources */,
+				F852832C1533653900F441FE /* Cross.png in Resources */,
+				F852832D1533653900F441FE /* Heart.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F852828B1533531200F441FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85283031533601F00F441FE /* SEAnimationFactory.m in Sources */,
+				F85283041533601F00F441FE /* TBHintView.m in Sources */,
+				F85283051533601F00F441FE /* UIView+SEAnimations.m in Sources */,
+				F852830C1533603400F441FE /* AppDelegate.m in Sources */,
+				F852830D1533603400F441FE /* DemoHintView.m in Sources */,
+				F852830E1533603400F441FE /* ViewController.m in Sources */,
+				F852831D1533604500F441FE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F85283241533648100F441FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F85283251533648100F441FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F85283261533648100F441FE /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F85283271533648100F441FE /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F85282AB1533531200F441FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F85282AC1533531200F441FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F85282AE1533531200F441FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TBHintViewDemo/TBHintViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "TBHintViewDemo/TBHintViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F85282AF1533531200F441FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TBHintViewDemo/TBHintViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "TBHintViewDemo/TBHintViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F85282891533531200F441FE /* Build configuration list for PBXProject "TBHintViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85282AB1533531200F441FE /* Debug */,
+				F85282AC1533531200F441FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F85282AD1533531200F441FE /* Build configuration list for PBXNativeTarget "TBHintViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85282AE1533531200F441FE /* Debug */,
+				F85282AF1533531200F441FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F85282861533531200F441FE /* Project object */;
+}
