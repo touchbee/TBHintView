@@ -42,7 +42,6 @@
 @interface DemoHintView()
 
 @property (nonatomic,retain) TBHintView* hintView;
-@property (nonatomic,assign) HintViewOrientation orientation;
 @property (nonatomic,copy) DemoHintViewBlock dismissedBlock;
 @property (nonatomic,copy) DemoHintViewBlock customDismissedBlock;
 
@@ -59,7 +58,6 @@
 @synthesize customDismissedBlock;
 @synthesize pageTitles;
 @synthesize pageContent;
-@synthesize orientation;
 @synthesize title;
 @synthesize icon;
 @synthesize maxHeight;
@@ -71,12 +69,10 @@
     __block DemoHintView* basicHintView = [[[DemoHintView alloc] init] autorelease];
     
     basicHintView.hintView.textColor = [UIColor whiteColor];
-    //basicHintView.hintView.backgroundColor = [UIColor colorWithRed:89.0/255.0 green:119.0/255.0 blue:39.0/255.0 alpha:0.95];
     basicHintView.hintView.backgroundImage = [UIImage imageNamed:@"pattern2.jpg"];
     basicHintView.hintView.spanWidthWeight = 0.95f;
     basicHintView.hintView.presentationAnimation = kHintViewPresentationSlide;
     basicHintView.hintView.backgroundImage = [UIImage imageNamed:@"pattern2.jpg"];
-    basicHintView.hintView.orientation = kHintViewOrientationBottom;
     
     basicHintView.icon = [UIImage imageNamed:@"90-lifebuoy"];
     
@@ -94,9 +90,24 @@
     __block DemoHintView* basicHintView = [[[DemoHintView alloc] init] autorelease];
     
     basicHintView.hintView.textColor = [UIColor whiteColor];
-    basicHintView.hintView.backgroundColor = [UIColor colorWithRed:189.0/255.0 green:10/255.0 blue:5/255.0 alpha:0.95];
+    basicHintView.hintView.backgroundColor = [UIColor colorWithRed:189.0/255.0 green:10/255.0 blue:5/255.0 alpha:0.9];
     basicHintView.hintView.spanWidthWeight = 0.95f;
     basicHintView.hintView.presentationAnimation = kHintViewPresentationBounce;
+    
+    basicHintView.icon = [UIImage imageNamed:@"90-lifebuoy"];
+    
+    return basicHintView;
+}
+
+
++(DemoHintView*) otherHintView
+{
+    __block DemoHintView* basicHintView = [[[DemoHintView alloc] init] autorelease];
+    
+    basicHintView.hintView.textColor = [UIColor whiteColor];
+    basicHintView.hintView.backgroundColor = [UIColor colorWithRed:89.0/255.0 green:119.0/255.0 blue:39.0/255.0 alpha:0.9];
+    basicHintView.hintView.spanWidthWeight = 0.95f;
+    basicHintView.hintView.presentationAnimation = kHintViewPresentationFade;
     
     basicHintView.icon = [UIImage imageNamed:@"90-lifebuoy"];
     
@@ -213,9 +224,9 @@
 }
 
 
--(void) showInView:(UIView*)view orientation:(HintViewOrientation)orientation_ duration:(NSTimeInterval)duration
+-(void) showInView:(UIView*)view orientation:(TBHintViewOrientation)orientation_ duration:(NSTimeInterval)duration
 {
-    self.orientation = orientation_;
+    self.hintView.orientation = orientation_;
     
     // Keep self alive until dismissed
     [self retain];
@@ -233,9 +244,9 @@
 }
 
 
--(void) showInView:(UIView*)view orientation:(HintViewOrientation)orientation_
+-(void) showInView:(UIView*)view orientation:(TBHintViewOrientation)orientation_
 {
-    self.orientation = orientation_;
+    self.hintView.orientation = orientation_;
     
     // Keep self alive until dismissed
     [self retain];
@@ -244,6 +255,48 @@
     [view bringSubviewToFront:self.hintView];
     
     [self.hintView show]; 
+}
+
+
+-(void) showInView:(UIView*)view duration:(NSTimeInterval)duration presentation:(TBHintViewPresentationAnimation)presentation
+{
+    [self showInView:view duration:duration presentation:presentation];
+}
+
+
+-(void) showInView:(UIView*)view orientation:(TBHintViewOrientation)orientation_ duration:(NSTimeInterval)duration presentation:(TBHintViewPresentationAnimation)presentation
+{
+    self.hintView.orientation = orientation_;
+    self.hintView.presentationAnimation = presentation;
+    
+    // Keep self alive until dismissed
+    [self retain];
+    
+    [view addSubview:self.hintView];
+    [view bringSubviewToFront:self.hintView];
+    
+    [self.hintView show:duration]; 
+}
+
+
+-(void) showInView:(UIView*)view presentation:(TBHintViewPresentationAnimation)presentation
+{
+    [self showInView:view orientation:kHintViewOrientationBottom presentation:presentation];
+}
+
+
+-(void) showInView:(UIView*)view orientation:(TBHintViewOrientation)orientation_ presentation:(TBHintViewPresentationAnimation)presentation
+{
+    self.hintView.orientation = orientation_;
+    self.hintView.presentationAnimation = presentation;
+    
+    // Keep self alive until dismissed
+    [self retain];
+    
+    [view addSubview:self.hintView];
+    [view bringSubviewToFront:self.hintView];
+    
+    [self.hintView show];
 }
 
 
@@ -382,15 +435,12 @@
 
 +(BOOL) shouldShowHint:(NSUInteger)hintType
 {
-    return YES;
-    /*
     if( ![DemoHintView hintsEnabled] )
     {
         return NO;
     }
     
     return ![[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:@"hints.seen.%d", hintType]];
-     */
 }
 
 

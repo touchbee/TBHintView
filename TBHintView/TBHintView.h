@@ -13,7 +13,7 @@ typedef enum
     kHintViewOrientationTop,
     kHintViewOrientationBottom
     
-} HintViewOrientation;
+} TBHintViewOrientation;
 
 
 typedef enum
@@ -24,7 +24,7 @@ typedef enum
     kHintViewPresentationSlide,
     kHintViewPresentationBounce
     
-} HintViewPresentationAnimation;
+} TBHintViewPresentationAnimation;
 
 
 @protocol TBHintViewDataSource;
@@ -38,8 +38,8 @@ typedef enum
 @property (nonatomic,copy) UIImage* backgroundImage;
 @property (nonatomic,copy) UIColor* textColor;
 @property (nonatomic,assign) CGFloat spanWidthWeight; // Width weight between 0.01f and 1.0f
-@property (nonatomic,assign) HintViewPresentationAnimation presentationAnimation;
-@property (nonatomic,assign) HintViewOrientation orientation;
+@property (nonatomic,assign) TBHintViewPresentationAnimation presentationAnimation;
+@property (nonatomic,assign) TBHintViewOrientation orientation;
 
 -(void) show;
 -(void) show:(NSTimeInterval)duration;

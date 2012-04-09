@@ -32,6 +32,7 @@ typedef void (^DemoHintViewBlock)();
 
 +(DemoHintView*) infoHintView;
 +(DemoHintView*) warningHintView;
++(DemoHintView*) otherHintView;
 
 +(BOOL) shouldShowHint:(NSUInteger)hintID;
 +(void) resetAllHints;
@@ -50,10 +51,16 @@ typedef void (^DemoHintViewBlock)();
 -(void) setDismissedHandler:(DemoHintViewBlock)dismissed;
 
 -(void) showInView:(UIView*)view;
--(void) showInView:(UIView*)view orientation:(HintViewOrientation)orientation;
+-(void) showInView:(UIView*)view orientation:(TBHintViewOrientation)orientation;
 
 -(void) showInView:(UIView*)view duration:(NSTimeInterval)duration;
--(void) showInView:(UIView*)view orientation:(HintViewOrientation)orientation duration:(NSTimeInterval)duration;
+-(void) showInView:(UIView*)view orientation:(TBHintViewOrientation)orientation duration:(NSTimeInterval)duration;
+
+-(void) showInView:(UIView*)view presentation:(TBHintViewPresentationAnimation)presentation;
+-(void) showInView:(UIView*)view orientation:(TBHintViewOrientation)orientation presentation:(TBHintViewPresentationAnimation)presentation;
+
+-(void) showInView:(UIView*)view duration:(NSTimeInterval)duration presentation:(TBHintViewPresentationAnimation)presentation;
+-(void) showInView:(UIView*)view orientation:(TBHintViewOrientation)orientation duration:(NSTimeInterval)duration presentation:(TBHintViewPresentationAnimation)presentation;
 
 -(void) dismiss;
 
