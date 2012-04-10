@@ -19,6 +19,7 @@
 @property (nonatomic,retain) UIPageControl* pageControl;
 @property (nonatomic,retain) UIScrollView* scrollViewPages;
 @property (nonatomic,retain) NSTimer* dismissTimer;
+@property (atomic,assign) BOOL isDismissing;
 
 @end
 
@@ -39,6 +40,7 @@
 @synthesize orientation;
 @synthesize dismissTimer;
 @synthesize maximumHeight;
+@synthesize isDismissing;
 
 
 - (id)initWithFrame:(CGRect)frame
@@ -349,6 +351,13 @@
 
 -(void) dismiss
 {    
+    if( self.isDismissing )
+    {
+        return;
+    }
+    
+    self.isDismissing = YES;
+    
     if( self.dismissTimer )
     {
         [self.dismissTimer invalidate];

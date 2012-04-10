@@ -41,6 +41,7 @@ typedef void (^DemoHintViewBlock)();
 +(BOOL) hintsEnabled;
 
 +(BOOL) isHintVisibleInView:(UIView*)view;
++(void) dismissVisibleHintInView:(UIView*)view;
 
 -(void) addPageWithTitle:(NSString*)title text:(NSString*)text;
 -(void) addPageWithTitle:(NSString*)title image:(UIImage*)image;

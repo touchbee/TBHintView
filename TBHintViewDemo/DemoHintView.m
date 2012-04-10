@@ -473,4 +473,17 @@
     return NO;
 }
 
+
++(void) dismissVisibleHintInView:(UIView*)view
+{
+    for (UIView* subview in view.subviews ) 
+    {
+        if( [subview isKindOfClass:[TBHintView class]] )
+        {
+            TBHintView* hintView = (TBHintView*)subview;
+            [hintView dismiss];
+        }
+    }
+}
+
 @end
