@@ -89,6 +89,7 @@
 {
     __block DemoHintView* basicHintView = [[[DemoHintView alloc] init] autorelease];
     
+    basicHintView.hintView.type = kHintTypeWarning;
     basicHintView.hintView.textColor = [UIColor whiteColor];
     basicHintView.hintView.backgroundColor = [UIColor colorWithRed:189.0/255.0 green:10/255.0 blue:5/255.0 alpha:0.9];
     basicHintView.hintView.spanWidthWeight = 0.95f;
@@ -474,6 +475,39 @@
 }
 
 
++(BOOL) isHintVisibleInView:(UIView*)view withType:(HintType)type
+{
+    for (UIView* subview in view.subviews ) 
+    {
+        if( [subview isKindOfClass:[TBHintView class]] )
+        {
+            TBHintView* hintView = (TBHintView*)subview;
+            if( hintView.type == type )
+            {
+                return YES;
+            }
+        }
+    }
+    
+    return NO;
+}
+
+
++(TBHintView*) hintInView:(UIView*)view
+{
+    for (UIView* subview in view.subviews ) 
+    {
+        if( [subview isKindOfClass:[TBHintView class]] )
+        {
+            TBHintView* hintView = (TBHintView*)subview;
+            return hintView;
+        }
+    }
+    
+    return nil;
+}
+
+
 +(void) dismissVisibleHintInView:(UIView*)view
 {
     for (UIView* subview in view.subviews ) 
@@ -485,5 +519,23 @@
         }
     }
 }
+
+
++(void) dismissVisibleHintInView:(UIView*)view withType:(HintType)type
+{
+    for (UIView* subview in view.subviews ) 
+    {
+        if( [subview isKindOfClass:[TBHintView class]] )
+        {
+            TBHintView* hintView = (TBHintView*)subview;
+            if( hintView.type == type )
+            {
+                [hintView dismiss];
+            }
+        }
+    }
+}
+
+
 
 @end

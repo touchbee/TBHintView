@@ -41,6 +41,7 @@ typedef enum
 @property (nonatomic,assign) TBHintViewPresentationAnimation presentationAnimation;
 @property (nonatomic,assign) TBHintViewOrientation orientation;
 @property (nonatomic,assign) CGFloat maximumHeight;
+@property (nonatomic,assign) NSUInteger type;
 
 -(void) show;
 -(void) show:(NSTimeInterval)duration;

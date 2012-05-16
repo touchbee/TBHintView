@@ -41,6 +41,7 @@
 @synthesize dismissTimer;
 @synthesize maximumHeight;
 @synthesize isDismissing;
+@synthesize type;
 
 
 - (id)initWithFrame:(CGRect)frame

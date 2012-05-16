@@ -21,6 +21,15 @@ typedef enum
 } HintID;
 
 
+typedef enum
+{
+    kHintTypeMessage = 0,
+    kHintTypeWarning,
+    kHintTypeError
+    
+} HintType;
+
+
 @interface DemoHintView : NSObject<TBHintViewDataSource, TBHintViewDelegate>
 
 typedef void (^DemoHintViewBlock)();
@@ -40,8 +49,12 @@ typedef void (^DemoHintViewBlock)();
 +(void) enableHints:(BOOL)enable;
 +(BOOL) hintsEnabled;
 
++(TBHintView*) hintInView:(UIView*)view;
 +(BOOL) isHintVisibleInView:(UIView*)view;
 +(void) dismissVisibleHintInView:(UIView*)view;
+
++(BOOL) isHintVisibleInView:(UIView*)view withType:(HintType)type;
++(void) dismissVisibleHintInView:(UIView*)view withType:(HintType)type;
 
 -(void) addPageWithTitle:(NSString*)title text:(NSString*)text;
 -(void) addPageWithTitle:(NSString*)title image:(UIImage*)image;
