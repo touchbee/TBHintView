@@ -28,3 +28,5 @@ The demo includes TBHintViewDemo/DemoHintView, which acts as a wrapper for the T
 #Credits
 
 TBHintView is brought to you by touchbee Solutions. If you have feature suggestions or bug reports, feel free to help out by sending pull requests or by creating new issues. If you’re using TBHintView in your project, attribution would be appreciated.
+
+If you like TBHintView please follow us on Twitter @touchbee
