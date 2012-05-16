@@ -55,6 +55,11 @@
         self.userInteractionEnabled = YES;
         self.presentationAnimation = kHintViewPresentationSlide;
         self.orientation = kHintViewOrientationBottom;
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self 
+                                                 selector:@selector(deviceOrientationDidChange:) 
+                                                     name:UIDeviceOrientationDidChangeNotification 
+                                                   object:nil];
     }
     
     return self;
@@ -63,6 +68,8 @@
 
 -(void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
     self.dataSource = nil;
     self.delegate = nil;
     
@@ -423,8 +430,19 @@
 }
 
 
+-(void) clearPages
+{
+    for ( UIView* subView in self.scrollViewPages.subviews ) 
+    {
+        [subView removeFromSuperview];
+    }
+}
+
+
 -(void) createPages
 {
+    [self clearPages];
+    
     NSUInteger numberOfPages = [self.dataSource numberOfPagesInHintView:self];
     self.pageControl.numberOfPages = numberOfPages;
     
@@ -582,6 +600,60 @@
 -(void)setBackgroundImage:(UIImage *)backgroundImage_
 {
     self.layer.contents = (id)backgroundImage_.CGImage;
+}
+
+
+-(void) deviceOrientationDidChange:(NSNotification*)notification
+{
+    UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
+ 
+    if( UIDeviceOrientationIsLandscape( deviceOrientation ))
+    {
+        NSLog( @"Landscape" );
+        [self refreshLayout];
+    }
+    else 
+    {
+        NSLog( @"Portrait" );
+        [self refreshLayout];
+    }
+}
+
+
+-(void) refreshLayout
+{
+    NSInteger currentPage = self.pageControl.currentPage;
+    
+    CGRect oldFrame = self.frame;
+    
+    // Initialization code
+    self.frame = CGRectMake( 0, 0, 320, 200 );
+    
+    self.frame = oldFrame;
+    
+    CGRect parentFrame = self.superview.bounds;
+    CGFloat height = self.maximumHeight;
+        
+    CGFloat width = parentFrame.size.width * spanWidthWeight;
+    CGFloat margin = ( parentFrame.size.width - width ) / 2.0f;
+    
+    if( self.orientation == kHintViewOrientationBottom )
+    {
+        self.frame = CGRectMake( margin, 
+                                parentFrame.origin.y + parentFrame.size.height - height + 10, 
+                                width, 
+                                height );
+    }
+    else
+    {
+        self.frame = CGRectMake( margin, 
+                                -10, 
+                                width, 
+                                height );
+    }
+    
+    [self createPages];
+    [self showPage:currentPage];
 }
 
 @end
